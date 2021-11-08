@@ -1,2 +1,12 @@
-# EC2-JobRunner
-Job runner on EC2
+# EC2 JobRunner 🏃
+Runs python script in EC2, then shuts down instance.
+
+## Add script to crontab
+```shell
+# run
+crontab -e
+
+# add
+@reboot /home/ec2-user/EC2-JobRunner/script.sh
+```
+
